@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+ }
+
+body{
+    font-size: 100%;
+    background:	#D3D3D3;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.blocos-degrade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to left, #FDE8CD, #433520, #00917C, #DFE0DF);
+    background-size: 500% 100%;
+    animation: degrade 6s infinite alternate ;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+
+    50%{
+        background-position-x: 50%;
+    }
+
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+.cabeçalho {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+}
+
+.frase {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    color:aliceblue;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.cabeçalho-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.cabeçalho-menu-item {
+    font-family: 'Montserrat', sans-serif;
+    color:aliceblue;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.cabeçalho-menu-item:hover {
+    background: #fff;
+    color: black;
+}
+
+.conteudo-intro {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 300px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/tabua-de-madeira-em-cima-de-um-fundo-vazio.jpg");
+    background-size: 100vw 100vh;
+}
+
+.conteudo-intro-escrito {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    font-size: 21px;
+}
+
+.conteudo-intro-escrito-titulo {
+    font-size: 50px;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+}
+
+.conteudo-intro-escrito-texto {
+    background: #DCDCDC;
+    border-radius: 10px;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.conteudo-intro-imagem {
+    border-radius: 100%;
+    max-width: 300px; 
+    padding-left: 10px;
+}
+
+.conteudo-formação {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items:center;
+    background-image: url("./assets/pilha-de-livros-coloridos-na-area-de-trabalho.jpg");
+    background-size: 100vw 100vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+.conteudo-formação-gif {
+    display: flex;
+    align-self: flex-start;
+}
+
+.conteudo-formação-imagem {
+    display: flex;
+    order: -1;
+    align-self: flex-end;
+}
+
+.astronauta {
+    height: 120px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.conteudo-formação-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+.conteudo-formação-escrito-titulo {
+    font-size: 50px;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+}
+
+.conteudo-formação-escrito-texto {
+    background-color: #DCDCDC;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.conteudo-carreira {
+    background-image: url("./assets/arranjo-de-mesa-plana-com-espaco-de-copia\ \(1\).jpg");
+    background-size: 100vw 100vh;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 200px;
+}
+
+.conteudo-carreira-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.conteudo-carreira-escrito-titulo {
+    font-size: 50px;
+    border-bottom: 2px solid black;
+}
+
+.conteudo-carreira-escrito-texto {
+    font-size: 25px;
+    background: #FFDAB9;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.conteudo-hq {
+    background-image: url("./assets/conceitual-de-negocios-com-coluna-de-blocos-de-madeira-com-icones.jpg");
+    background-size: 100vw 100vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteudo-hq-titulo {
+    border-bottom: 2px solid black;
+}
+
+.conteudo-hq-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 25px;
+}
+
+.conteudo-hq-lista {
+    background:#DCDCDC ;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.conteudo-obj {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/conceito-de-destino-com-blocos-de-madeira.jpg");
+    background-size: 100vw 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteudo-obj-titulo {
+    border-bottom: 2px solid black;
+    font-size: 25px;
+}
+
+.conteudo-obj-texto {
+    font-size: 25px;
+}
+
+
+
